@@ -17,6 +17,22 @@
                 <version>1.5.0</version>
                 <executions>
                     <execution>
+                        <id>Get update from the sub module</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <executable>git</executable>
+                            <arguments>
+                                <argument>submodule</argument>
+                                <argument>update</argument>
+                                <argument>--recursive</argument>
+                                <argument>--remote</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>Generate the mdbook</id>
                         <goals>
                             <goal>exec</goal>
