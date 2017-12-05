@@ -24,7 +24,7 @@
 
     <fileSets>
         <fileSet>
-            <directory>target/book</directory>
+            <directory>${basedir}/ballerina-by-example/book</directory>
             <outputDirectory>.</outputDirectory>
         </fileSet>
     </fileSets>
