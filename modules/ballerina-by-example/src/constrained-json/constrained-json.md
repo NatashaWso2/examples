@@ -1,0 +1,12 @@
+# Constrained JSON
+
+A json can be constrained with a struct definition to restrict the fields of the json to that of the struct. If tried to access a field with an invalid field as per the struct definition or initialize a json with invalid fields, this will cause a compilation error. 
+Restricting the fields of the json will enforce the format of the json variable.
+
+{{#playpen constrained-json.bal}}
+
+```bash
+$ ballerina run constrained-json.bal
+{"name":"Jon","age":25,"city":"Colombo"}
+{"name":"Jon","age":25,"city":"Colombo","profession":"Software Engineer"}
+```

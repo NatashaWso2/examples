@@ -1,0 +1,14 @@
+# Global Variables
+
+In Ballerina, global variables are defined as top level constructs.
+They are usually defined on top of the Ballerina program.
+The global variables holds their value throughout the lifetime of the Ballerina program.
+
+
+{{#playpen global-variables.bal}}
+
+```bash
+$ ballerina run global-variables.bal
+98
+This is a sample text
+```

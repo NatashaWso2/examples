@@ -1,0 +1,13 @@
+# Arrays
+
+All arrays are unbounded in length and support 0 based indexing. Arrays may be sparse as well and they will grow to meet whatever size needed based on the index (subject to memory availability of course).
+
+{{#playpen arrays.bal}}
+
+```bash
+$ ballerina run arrays.bal
+0
+8
+23
+1000
+```

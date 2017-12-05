@@ -1,0 +1,17 @@
+# JSON
+
+JSON is a textual format for representing a collection of values: a simple value (string, number, “true”, “false”, “null”), an array of values or an object.
+Ballerina has a single type named “json” that can represent any JSON value.
+Thus it is a built-in union type in Ballerina whose value can be any one of a string, a float, a boolean, an array of any or a map of any.
+
+{{#playpen json.bal}}
+
+```bash
+$ ballerina run json.bal
+Apple
+5.36
+true
+false
+{"name":"apple","color":"red","price":5.36}
+[1,false,null,"foo",{"first":"John","last":"Pala"}]
+```

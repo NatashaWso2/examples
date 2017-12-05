@@ -1,0 +1,6 @@
+title = "Ballerina By Example"
+description = "A description"
+author = "The Ballerina Community"
+
+[output.html.playpen]
+editable = true

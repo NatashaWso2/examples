@@ -1,0 +1,13 @@
+# Lambda
+
+Lambdas are simply a syntactic shortcut for defining a function inline.
+In comparison to a normal function definition, the only missing part here is the name. Semantically, these inline anonymous functions will not be allowed to have any references to in-scope variables other than to global or package level variables. 
+
+Thus, it behaves exactly like a regular function except that it cannot be called in another place as it has no name.
+
+{{#playpen lambda.bal}}
+
+```bash
+$ ballerina run lambda.bal
+Output: Hello world.!!!
+```

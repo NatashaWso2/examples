@@ -1,0 +1,11 @@
+# Functions
+
+Functions are like functions in any other language and are a mechanism to create a reusable unit of functionality.
+
+{{#playpen functions.bal}}
+
+```bash
+$ ballerina run functions.bal
+This is a sample text
+11
+```
