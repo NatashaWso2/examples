@@ -24,7 +24,7 @@ In the **mdbook-orbit** module:
 
 In the **ballerina-by-example** module: 
 
-4. Unzip the generated zipped target from the **mdbook-orbit** module using the maven dependancy plugin and extract the mdbook    binary to the **ballerina-by-example** module
+4. Unzip the generated zipped target from the **mdbook-orbit** module using the maven dependancy plugin and extract the mdbook    binary to `ballerina-by-example/target`
 
 4. Generate ballerina-by-example site using the mdbook generated. 
-  (`${basedir}/mdbook-orbit/mdbook build ${basedir}/ballerina-by-example`)
+  (`${basedir}/target/mdbook build ${basedir}/ballerina-by-example`)
