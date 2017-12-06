@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>examples</artifactId>
+        <groupId>org.ballerinalang</groupId>
+        <version>0.95.1-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.ballerinalang</groupId>
-    <artifactId>examples</artifactId>
-    <packaging>pom</packaging>
-    <version>0.95.1-SNAPSHOT</version>
+    <artifactId>mdbook-orbit</artifactId>
 
     <build>
         <plugins>
@@ -62,20 +64,6 @@
                             </arguments>
                         </configuration>
                     </execution>
-                    <execution>
-                        <id>Generate ballerina-by-examples using mdbook</id>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <phase>package</phase>
-                        <configuration>
-                            <executable>${mdbook.executable}</executable>
-                            <arguments>
-                                <argument>build</argument>
-                                <argument>${basedir}/ballerina-by-example/</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -93,7 +81,7 @@
                             <descriptors>
                                 <descriptor>${basedir}/assembly/bin.xml</descriptor>
                             </descriptors>
-                            <finalName>${project.artifactId}-${project.version}</finalName>
+                            <finalName>mdbook</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>
@@ -102,11 +90,4 @@
         </plugins>
     </build>
 
-    <modules>
-        <module>modules/ballerina-by-example</module>
-        <module>modules/mdbook-orbit</module>
-    </modules>
-    <properties>
-        <mdbook.executable>${basedir}/mdBook/target/debug/mdbook</mdbook.executable>
-    </properties>
 </project>
