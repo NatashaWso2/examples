@@ -1,4 +1,4 @@
 target
-modules/ballerina-by-example/book/
+modules/ballerina-by-example/book
 *.iml
-modules/ballerina-by-example/mdbook-orbit/
+modules/ballerina-by-example/target
