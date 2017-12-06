@@ -1,10 +1,9 @@
 # Summary
 
-[Ballerina by Example](index.md)
-- [Introduction](hello-world/hello-world.md)
-    - [Hello World](hello-world/hello-world.md)
-    - [Hello World Parallel](hello-world-parallel/hello-world-parallel.md)
-    - [Hello World Service](hello-world-service/hello-world-service.md)
+[Introduction](index.md)
+- [Hello World](hello-world/hello-world.md)
+- [Hello World Parallel](hello-world-parallel/hello-world-parallel.md)
+- [Hello World Service](hello-world-service/hello-world-service.md)
 - [Value Types](value-types/value-types.md)
 - [Constants](constants/constants.md)
 - [Global Variables](global-variables/global-variables.md)
