@@ -13,7 +13,10 @@ Building the repository using `mvn clean install`will:
 1. Update all the submodules in the project recursivley by fetching the latest changes from upstream in each submodule, merging    them in, and checking out the latest revision of the submodule.
   (`git submodules update --recursive --remote`)
 
-2. Generate the mdbook from the submodule. (`cargo build --manifest-path ${basedir}/mdBook/Cargo.toml`)
+2. Clean the alreday generated mdbook from the `target/` of the submodule. 
+  (`cargo clean --manifest-path ${basedir}/mdBook/Cargo.toml`)
 
-3. Generate ballerina-by-example site using the mdbook generated. 
+3. Generate the mdbook from the submodule. (`cargo build --manifest-path ${basedir}/mdBook/Cargo.toml`)
+
+4. Generate ballerina-by-example site using the mdbook generated. 
   (`${basedir}/mdBook/target/debug/mdbook build ${basedir}/ballerina-by-example`)
