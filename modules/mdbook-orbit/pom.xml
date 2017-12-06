@@ -23,6 +23,7 @@
                         <goals>
                             <goal>exec</goal>
                         </goals>
+                        <phase>compile</phase>
                         <configuration>
                             <executable>git</executable>
                             <arguments>
