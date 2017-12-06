@@ -9,7 +9,91 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <packaging>pom</packaging>
     <artifactId>ballerina-by-example</artifactId>
 
+    <build>
+        <plugins>
+            <!-- Unzip the generated mdbook into the module-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>unpack</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.ballerinalang</groupId>
+                                    <artifactId>mdbook-orbit</artifactId>
+                                    <version>0.95.1-SNAPSHOT</version>
+                                    <type>zip</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${basedir}/mdbook-orbit</outputDirectory>
+                                    <destFileName>mdbook-orbit.zip</destFileName>
+                                    <includes>mdbook</includes>
+                                </artifactItem>
+                            </artifactItems>
+                            <includes>mdbook</includes>
+                            <outputDirectory>${basedir}/mdbook-orbit</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
+            <!-- Generate ballerina-by-examples using mdbook -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.5.0</version>
+                <executions>
+                    <execution>
+                    <id>Generate ballerina-by-examples using mdbook</id>
+                    <goals>
+                        <goal>exec</goal>
+                    </goals>
+                    <phase>package</phase>
+                    <configuration>
+                        <executable>${mdbook.executable}</executable>
+                        <arguments>
+                            <argument>build</argument>
+                        </arguments>
+                    </configuration>
+                </execution>
+            </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                    <execution>
+                        <id>distribution</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>${basedir}/assembly/bin.xml</descriptor>
+                            </descriptors>
+                            <finalName>${project.artifactId}-${project.version}</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <mdbook.executable>${basedir}/mdbook-orbit/mdbook</mdbook.executable>
+    </properties>
 </project>

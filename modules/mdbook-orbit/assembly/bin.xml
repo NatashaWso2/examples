@@ -17,14 +17,14 @@
   -->
 <assembly>
     <includeBaseDirectory>false</includeBaseDirectory>
-    <id>mdbook orbit</id>
+    <id>mdbook-orbit</id>
     <formats>
         <format>zip</format>
     </formats>
 
     <fileSets>
         <fileSet>
-            <directory>${basedir}/target</directory>
+            <directory>mdbook/target/debug/</directory>
             <outputDirectory>.</outputDirectory>
         </fileSet>
     </fileSets>
