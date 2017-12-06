@@ -18,8 +18,9 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.5.0</version>
                 <executions>
+                    <!-- Update the submodules -->
                     <execution>
-                        <id>Get update from the sub module</id>
+                        <id>Get updates from the sub module</id>
                         <goals>
                             <goal>exec</goal>
                         </goals>
@@ -34,6 +35,7 @@
                             </arguments>
                         </configuration>
                     </execution>
+                    <!-- Clean generated mdbook -->
                     <execution>
                         <id>Clean generated mdbook</id>
                         <goals>
@@ -49,6 +51,7 @@
                             </arguments>
                         </configuration>
                     </execution>
+                    <!-- Generate the mdbook -->
                     <execution>
                         <id>Generate the mdbook</id>
                         <goals>
