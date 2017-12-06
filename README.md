@@ -17,7 +17,7 @@ Prerequisites
 
 3) Find the generated mdbook in `examples/modules/mdbook-orbit/target` folder
 
-Building the repository using `mvn clean install` will: 
+Building the repository using `mvn clean install` will automatically provide the following: 
 
 In the **mdbook-orbit** module: 
 
