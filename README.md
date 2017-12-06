@@ -1,5 +1,5 @@
 # examples
-This repository has the source code for ballerina-by-example
+This repository has the source code for generating ballerina-by-example
 
 ## How to build
 The build process works on Maven and Rust.
