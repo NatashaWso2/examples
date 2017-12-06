@@ -31,16 +31,16 @@
                                 <artifactItem>
                                     <groupId>org.ballerinalang</groupId>
                                     <artifactId>mdbook-orbit</artifactId>
-                                    <version>0.95.1-SNAPSHOT</version>
+                                    <version>${project.version}</version>
                                     <type>zip</type>
                                     <overWrite>false</overWrite>
-                                    <outputDirectory>${basedir}/mdbook-orbit</outputDirectory>
+                                    <outputDirectory>${basedir}/target</outputDirectory>
                                     <destFileName>mdbook-orbit.zip</destFileName>
                                     <includes>mdbook</includes>
                                 </artifactItem>
                             </artifactItems>
                             <includes>mdbook</includes>
-                            <outputDirectory>${basedir}/mdbook-orbit</outputDirectory>
+                            <outputDirectory>${basedir}/target</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
                         </configuration>
@@ -94,6 +94,6 @@
     </build>
 
     <properties>
-        <mdbook.executable>${basedir}/mdbook-orbit/mdbook</mdbook.executable>
+        <mdbook.executable>${basedir}/target/mdbook</mdbook.executable>
     </properties>
 </project>
