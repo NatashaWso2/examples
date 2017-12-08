@@ -36,3 +36,21 @@ In the **ballerina-by-example** module:
 
 4. Generate ballerina-by-example site using the mdbook generated. 
   (`ballerina-by-example/target/mdbook build`)
+  
+  ## Features of ballerina-by-example site 
+  
+ * Navigation bar : The navigation bar given in the left side of the site will allow the users to navigate to the examples 
+                     easily. 
+ * Syntax Highlighting
+
+ * Editable: Pages in the site and code snippets provided in the samples are editable. This feature will enable us to to    
+             involve community support. 
+ * Configurable themes- According to the user's preference the user can select any theme.
+
+ * Print : The user can print the user-guide/examples 
+ 
+ * Copy code : Ballerina code given in the examples can be copied.
+ 
+ * Back and forth navigation: The user can navigate back and forth to the examples which will allow the user to continuously                               read through them.
+ * Explanations of the code is given as comments.
+
