@@ -5,18 +5,4 @@ The delay specifies the delay between registering the task and its first executi
 
 {{#playpen task-timer.bal}}
 
-```bash
-$ ballerina run task-timer.bal
-Timer task demo
-Task ID:ff6c2d4f-d9c2-46f4-a176-306d31fd2830
-Cleaning up...
-1
-Cleaning up...
-2
-Cleaning up...
-3
-Cleaning up...
-4
-...
-...
-```
+{{#playpen task-timer.sh}}

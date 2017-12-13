@@ -4,10 +4,5 @@ All arrays are unbounded in length and support 0 based indexing. Arrays may be s
 
 {{#playpen arrays.bal}}
 
-```bash
-$ ballerina run arrays.bal
-0
-8
-23
-1000
-```
+{{#playpen arrays.sh}}
+

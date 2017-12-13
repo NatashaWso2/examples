@@ -6,9 +6,4 @@ Throwing errors will be very rare and will happen under exceptional circumstance
 
 {{#playpen try-catch-finally.bal}}
 
-```bash
-$ ballerina run try-catch-finally.bal
-start Accessing texts
-NullReferenceError error occurred
-finally Block executed
-```
+{{#playpen try-catch-finally.sh}}

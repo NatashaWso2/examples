@@ -5,7 +5,4 @@ There are safe and unsafe casts. For unsafe casts, Ballerina compiler will enfor
 
 {{#playpen type-casting.bal}}
 
-```bash
-$ ballerina run type-casting.bal
-Jungle cat
-```
+{{#playpen type-casting.sh}}

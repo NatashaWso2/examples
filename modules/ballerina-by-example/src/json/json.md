@@ -6,12 +6,4 @@ Thus it is a built-in union type in Ballerina whose value can be any one of a st
 
 {{#playpen json.bal}}
 
-```bash
-$ ballerina run json.bal
-Apple
-5.36
-true
-false
-{"name":"apple","color":"red","price":5.36}
-[1,false,null,"foo",{"first":"John","last":"Pala"}]
-```
+{{#playpen json.sh}}

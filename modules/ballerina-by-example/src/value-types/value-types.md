@@ -5,10 +5,4 @@ Ballerina Value types include int, float, string, boolean and blob.
 
 {{#playpen value-types.bal}}
 
-```bash
-$ ballerina run value-types.bal
-0
-20.0
-
-true
-```
+{{#playpen value-types.sh}}

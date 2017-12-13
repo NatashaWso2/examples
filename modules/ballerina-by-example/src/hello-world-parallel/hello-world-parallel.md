@@ -4,11 +4,5 @@ Let's print "Hello, World!" in parallel using Ballerina. Here we use workers whi
 
 {{#playpen hello-world-parallel.bal}}
 
-To run the program, put the code in "hello-world-parallel.bal" and use "ballerina run" command.
+{{#playpen hello-world-parallel.sh}}
 
-```bash
-$ ballerina run hello-world-parallel.bal
-Hello, World! #m
-Hello, World! #k
-Hello, World! #n
-```

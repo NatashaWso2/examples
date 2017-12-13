@@ -7,8 +7,4 @@ The global variables holds their value throughout the lifetime of the Ballerina 
 
 {{#playpen global-variables.bal}}
 
-```bash
-$ ballerina run global-variables.bal
-98
-This is a sample text
-```
+{{#playpen global-variables.sh}}

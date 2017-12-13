@@ -7,7 +7,4 @@ Thus, it behaves exactly like a regular function except that it cannot be called
 
 {{#playpen lambda.bal}}
 
-```bash
-$ ballerina run lambda.bal
-Output: Hello world.!!!
-```
+{{#playpen lambda.sh}}

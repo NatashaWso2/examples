@@ -5,8 +5,4 @@ This sample use MySQL DB and before running the sample copy the MySQL JDBC drive
 
 {{#playpen transactions.bal}}
 
-```bash
-$ ballerina run transactions.bal
-Inserted count:1
-Transaction committed
-```
+{{#playpen transactions.sh}}

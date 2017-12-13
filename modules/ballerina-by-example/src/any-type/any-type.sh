@@ -1,3 +1,4 @@
+#Run the ballerina program
 $ ballerina run any-type.bal
 5
 15

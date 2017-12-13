@@ -6,11 +6,4 @@ Ballerina encourages developers, NOT to use 'throw' for handling program related
 
 {{#playpen throw.bal}}
 
-```bash
-$ ballerina run throw.bal
-Record ID: 1, value: record1
-error: error, message: record is null
-	at .:readRecord(throw.bal:10)
-	at .:main(throw.bal:20)
-```
-
+{{#playpen throw.sh}}

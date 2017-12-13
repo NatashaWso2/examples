@@ -5,12 +5,4 @@ There are safe and unsafe conversions. For unsafe conversions, Ballerina compile
 
 {{#playpen type-conversion.bal}}
 
-```bash
-$ ballerina run type-conversion.bal
-10
-error: 'string' cannot be converted to 'int'
-5
-1
-true
-true
-```
+{{#playpen type-conversion.sh}}

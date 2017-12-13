@@ -4,8 +4,4 @@ Functions are like functions in any other language and are a mechanism to create
 
 {{#playpen functions.bal}}
 
-```bash
-$ ballerina run functions.bal
-This is a sample text
-11
-```
+{{#playpen functions.sh}}

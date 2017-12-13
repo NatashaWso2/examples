@@ -5,8 +5,4 @@ Restricting the fields of the json will enforce the format of the json variable.
 
 {{#playpen constrained-json.bal}}
 
-```bash
-$ ballerina run constrained-json.bal
-{"name":"Jon","age":25,"city":"Colombo"}
-{"name":"Jon","age":25,"city":"Colombo","profession":"Software Engineer"}
-```
+{{#playpen constrained-json.sh}}
