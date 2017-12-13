@@ -1,4 +1,4 @@
-// enum keyword defined before the name will indicate that this type
+// enum keyword defined before the identifier will indicate that this type
 // definition is an enum
 enum colors {
     red,
