@@ -8,7 +8,4 @@ Worker execution starts immediately after invoking the relevant function, action
 
 {{#playpen worker.bal}}
 
-```bash
-$ ballerina run worker.bal
-[w1] iw: 200 kw: 5.44
-```
+{{#playpen worker.sh}}

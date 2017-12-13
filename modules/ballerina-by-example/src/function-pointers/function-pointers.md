@@ -4,9 +4,4 @@ A function pointer is a Ballerina type, that allows passing functions as variabl
 
 {{#playpen function-pointers.bal}}
 
-```bash
-$ ballerina run function-pointers.bal
-Answer: 200.0
-Answer: 200.0
-Answer: 200.0
-```
+{{#playpen function-pointers.sh}}

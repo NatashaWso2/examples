@@ -4,7 +4,4 @@ Ballerina functions can return many values at once instead of just one as is com
 
 {{#playpen multiple-return-values.bal}}
 
-```bash
-$ ballerina run multiple-return-values.bal
-24/10: quotient=2 remainder=4
-```
+{{#playpen multiple-return-values.sh}}

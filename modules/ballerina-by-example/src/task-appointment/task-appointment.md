@@ -6,6 +6,4 @@ A trigger function is called when an appointment is due. If a failure occurs dur
 
 {{#playpen task-appointment.bal}}
 
-```bash
-$ ballerina run task-appointment.bal
-```
+{{#playpen task-appointment.sh}}

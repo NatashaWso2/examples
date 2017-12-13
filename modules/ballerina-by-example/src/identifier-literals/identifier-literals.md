@@ -10,7 +10,4 @@ Identifier literals allows you to use spaces and any set of Unicode code points.
 
 {{#playpen identifier-literals.bal}}
 
-```bash
-$ ballerina run identifier-literals.bal
-John Gosling
-```
+{{#playpen identifier-literals.sh}}
