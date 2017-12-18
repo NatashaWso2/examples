@@ -1,3 +1,4 @@
 # HTTP/HTTPS
 
-Ballerina can act both as a server and a client.
+HTTP Server Connectors enables handling inbound requests and outbound response whereas HTTP 
+Client Connector enables handling outbound requests and inbound response.
