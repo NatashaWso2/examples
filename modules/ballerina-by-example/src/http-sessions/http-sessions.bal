@@ -7,11 +7,12 @@ service<http> sessionTest {
         methods:["GET"]
     }
     resource sayHello (http:Request req, http:Response res) {
-        //createSessionIfAbsent() function returns an existing session for a valid session
-	//id, otherwise it returns a new session.
+        //createSessionIfAbsent() function returns an existing session for a
+	    //valid session id, otherwise it returns a new session.
         http:Session session = req.createSessionIfAbsent();
         string result;
-        //Session status(new or already existing) is informed by isNew() as boolean value.
+        //Session status(new or already existing) is informed by isNew() as
+        //boolean value.
         if (session.isNew()) {
             result = "Say hello to a new session";
         } else {
@@ -27,7 +28,8 @@ service<http> sessionTest {
         methods:["GET"]
     }
     resource doTask (http:Request req, http:Response res) {
-        //getSession() returns an existing session for a valid session id. otherwise null.
+        //getSession() returns an existing session for a valid session id.
+        //otherwise null.
         http:Session session = req.getSession();
         string attributeValue;
         if (session != null) {

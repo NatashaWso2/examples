@@ -43,7 +43,8 @@ function main (string[] args) {
     
     http:HttpClient httpConn = create http:HttpClient("https://postman-echo.com", {});
     
-    //bind statement can be used to bind new connections to existing endpoints.
+    //bind statement can be used to bind new connections to existing
+    //endpoints.
     bind httpConn with httpEndpoint;
     
     //The messages and http packages provide various utility functions

@@ -6,8 +6,8 @@ $ ballerina run websocket-chat-application.bal
 # the below commands
 # Run first 3 lines of the below code in two or more consoles and see
 # how the messages are received by sending messages
-# To check the capability of change the names the URI such that /chat/fistName+LastName/age
-# with multiple clients
+# To check the capability of change the names the URI such that
+# /chat/fistName+LastName/age with multiple clients
 $ var ws = new WebSocket("ws://localhost:9090/chat/bruce+wayne/30");
 $ ws.onmessage = function(frame) {console.log(frame.data)};
 $ ws.onclose = function(frame) {console.log(frame)};
