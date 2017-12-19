@@ -1,3 +1,3 @@
 # Flow Control
 
-Ballerina provides if/else and while constructs to modify control flow.
+Ballerina provides [If Else](if-else/if-else.html) and [While](if-else/if-else.html) constructs to modify control flow.
